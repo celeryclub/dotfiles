@@ -24,7 +24,7 @@
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
 [core]
-	editor = sublime -w
+	editor = subl -w
 	trustctime = false
 	excludesfile = .DS_Store
 [push]
