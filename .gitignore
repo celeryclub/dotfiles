@@ -1,0 +1,21 @@
+# All files
+*
+
+# Except dotfiles
+!.*
+
+# OSX
+.DS_Store
+.CFUserTextEncoding
+.Trash
+.Xauthority
+
+# No tracking needed
+.bash_history
+
+# Secret stuff
+.s3cfg
+
+# Misc junk
+.wireshark
+.rnd
