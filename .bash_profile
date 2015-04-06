@@ -1,30 +1,35 @@
-export PATH=/usr/local/sbin:$PATH
-export PATH=/usr/local/bin:$PATH
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls='ls -GFhl'
 
-# /usr/local/Cellar/ruby/1.9.3-p125/bin
-# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-# if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi
-# [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
+export PS1='⚡  \[\e[0;94m\]\w\[\e[0m\]\[\e[0;93m\]$(__git_ps1 " (%s)")\[\e[0m\] '
+export PROMPT_DIRTRIM=2
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# Personal & Homebrew
+export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
-[[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
+# rbenv
+# export RBENV_ROOT=/usr/local/var/rbenv
+eval "$(rbenv init -)"
 
-export PATH=$HOME/.pythonbrew/pythons/Python-2.7.3/lib/python2.7/site-packages/django/bin:$PATH
-# export PATH=$HOME/.pythonbrew/pythons/Python-3.2.3/lib/python3.2/site-packages/django/bin:$PATH
+# Node
+# export NODE_PATH="/usr/local/lib/node"
+# export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
+# export PATH="/usr/local/share/npm/bin:$PATH"
 
-# For django python-mysqldb adapter:
-# export PATH=$PATH:/usr/local/Cellar/mysql/5.5.27/bin/
+# Bash completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+. $(brew --prefix)/etc/bash_completion
+fi
 
-cd ~/Sites/
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# Heroku Toolbelt
+export PATH=/usr/local/heroku/bin:$PATH
 
-# {{{
-# Node Completion - Auto-generated, do not touch.
-shopt -s progcomp
-for f in $(command ls ~/.node-completion); do
-  f="$HOME/.node-completion/$f"
-  test -f "$f" && . "$f"
-done
-# }}}
+# Aliases
+alias violet="mpc -h violet.local"
+alias orange="mpc -h orange.local"
+
+alias s3="s3cmd"
+
+alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
