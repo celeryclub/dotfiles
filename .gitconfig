@@ -35,6 +35,7 @@
 	co = checkout
 	di = diff
 	dc = diff --cached
+	un = cherry -v
 	amend = commit --amend
 	aa = add --all
 	ff = merge --ff-only
