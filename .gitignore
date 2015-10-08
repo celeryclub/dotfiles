@@ -12,6 +12,9 @@
 
 # No tracking needed
 .bash_history
+.v8flags*
+.python_history
+.npmrc
 
 # Secret stuff
 .s3cfg
@@ -19,3 +22,4 @@
 # Misc junk
 .wireshark
 .rnd
+.flexlmrc
