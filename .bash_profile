@@ -14,6 +14,10 @@ eval "$(rbenv init -)"
 # pyenv
 eval "$(pyenv init -)"
 
+# nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 # Node
 # export NODE_PATH="/usr/local/lib/node"
 # export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
