@@ -11,6 +11,9 @@ export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 # rbenv
 eval "$(rbenv init -)"
 
+# pyenv
+eval "$(pyenv init -)"
+
 # Node
 # export NODE_PATH="/usr/local/lib/node"
 # export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
