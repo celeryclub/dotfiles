@@ -9,7 +9,6 @@ export PROMPT_DIRTRIM=2
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # rbenv
-# export RBENV_ROOT=/usr/local/var/rbenv
 eval "$(rbenv init -)"
 
 # Node
