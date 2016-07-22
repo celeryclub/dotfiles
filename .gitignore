@@ -15,12 +15,15 @@
 .*_history
 .v8flags*
 .npmrc
+.netrc
+.composer
+.pow
 
 # Secret stuff
 .private
 .s3cfg
+.pypirc
 
 # Misc junk
-.wireshark
 .rnd
 .flexlmrc
