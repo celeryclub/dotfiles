@@ -21,11 +21,6 @@ source $(brew --prefix nvm)/nvm.sh
 # PHP
 export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
 
-# Node
-# export NODE_PATH="/usr/local/lib/node"
-# export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
-# export PATH="/usr/local/share/npm/bin:$PATH"
-
 # Bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
