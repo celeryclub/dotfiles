@@ -11,9 +11,9 @@
 .Xauthority
 
 # No tracking needed
-.bash_history
+.*_hist
+.*_history
 .v8flags*
-.python_history
 .npmrc
 
 # Secret stuff
