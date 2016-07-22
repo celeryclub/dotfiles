@@ -18,6 +18,9 @@ eval "$(pyenv init -)"
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
+# PHP
+export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
+
 # Node
 # export NODE_PATH="/usr/local/lib/node"
 # export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
