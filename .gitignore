@@ -17,6 +17,7 @@
 .npmrc
 
 # Secret stuff
+.private
 .s3cfg
 
 # Misc junk
