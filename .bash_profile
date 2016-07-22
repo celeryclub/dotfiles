@@ -32,10 +32,14 @@ fi
 export PATH=/usr/local/heroku/bin:$PATH
 
 # Aliases
-alias violet="mpc -h violet.local"
-alias orange="mpc -h orange.local"
+alias reload="source ~/.bash_profile"
 
-alias s3="s3cmd"
+# alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias tower="gittower"
+alias cart="carthage"
+# alias s3="s3cmd"
+# alias mm="middleman"
+# alias swift="/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift"
 
 alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
