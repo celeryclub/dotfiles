@@ -18,9 +18,6 @@ eval "$(pyenv init -)"
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-# PHP
-export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
-
 # Bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
