@@ -1,6 +1,6 @@
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
-alias ls='ls -GFhl'
+alias ls='ls -aFGhl'
 
 export PS1='💰  \[\e[0;94m\]\w\[\e[0m\]\[\e[0;93m\]$(__git_ps1 " (%s)")\[\e[0m\] '
 export PROMPT_DIRTRIM=2
