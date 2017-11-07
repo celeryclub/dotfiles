@@ -18,6 +18,8 @@
 .netrc
 .composer
 .pow
+.anyconnect
+.viminfo
 
 # Secret stuff
 .private
