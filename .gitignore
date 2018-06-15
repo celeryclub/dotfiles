@@ -4,7 +4,7 @@
 # Except dotfiles
 !.*
 
-# OSX
+# macOS
 .DS_Store
 .CFUserTextEncoding
 .Trash
@@ -17,15 +17,11 @@
 .npmrc
 .netrc
 .composer
-.pow
 .anyconnect
 .viminfo
+.babel.json
+.zsh-update
+.zcompdump-*
 
-# Secret stuff
-.private
-.s3cfg
-.pypirc
-
-# Misc junk
-.rnd
-.flexlmrc
+# Secrets
+.secrets
