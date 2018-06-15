@@ -3,25 +3,40 @@
 
 # Except dotfiles
 !.*
+!.*/***
 
 # macOS
-.DS_Store
 .CFUserTextEncoding
+.DS_Store
 .Trash
 .Xauthority
 
 # No tracking needed
 .*_hist
 .*_history
-.v8flags*
-.npmrc
-.netrc
-.composer
 .anyconnect
-.viminfo
+.aws
 .babel.json
-.zsh-update
-.zcompdump-*
+.composer
+.config
+.cups
+.docker
+.dropbox
+.flotilla
+.local
+.netrc
+.node-gyp
+.npm
+.npmrc
+.nvm
+.pdepend
+.phpls
+.tblive*
+.v8flags*
+.viminfo
+.vscode*
 
-# Secrets
-.secrets
+# ZSH
+.zcompdump-*
+.zsh-custom/secrets.zsh
+.zsh-update
