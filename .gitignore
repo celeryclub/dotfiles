@@ -12,6 +12,7 @@
 .Xauthority
 
 # No tracking needed
+*.png
 .*_hist
 .*_history
 .anyconnect
