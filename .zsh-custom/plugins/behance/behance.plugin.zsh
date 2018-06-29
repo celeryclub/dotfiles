@@ -5,7 +5,7 @@ export PATH=/usr/local/opt/php@7.1/sbin:$PATH
 # Docker aliases
 alias dc=docker-compose
 alias dm=docker-machine
-alias dmenv="eval \"\$(docker-machine env dev)\""
+alias devenv="eval \"\$(docker-machine env dev)\""
 alias fl=flotilla
 
 # PHP aliases
