@@ -1,3 +1,5 @@
+readonly BEHANCE_PATH="~/adobe/behance"
+
 # PHP binaries
 export PATH=/usr/local/opt/php@7.1/bin:$PATH
 export PATH=/usr/local/opt/php@7.1/sbin:$PATH
@@ -23,8 +25,19 @@ else
   echo "Docker-machine: Machine ""dev"" is stopped."
 fi
 
-# Karma
-function karma() {
-  result=$(echo $1 | sed 's|/|\\/|g')
-  env TEST_FILTER=$result npm run karma:dev
+# Bring up dev machine and pro2 stack
+pro2() {
+  if ! docker-machine ls | grep -q 'dev.*vmwarefusion.*Running'; then
+    dm start dev
+  fi
+
+  devenv
+  fl up pro2
+}
+
+# Huxley blast
+blast() {
+  pushd "$BEHANCE_PATH/huxley"
+  dc build && dc up
+  popd
 }
