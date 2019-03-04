@@ -1,4 +1,4 @@
-readonly BEHANCE_PATH="~/adobe/behance"
+readonly BEHANCE_PATH="$HOME/adobe/behance"
 
 # PHP binaries
 export PATH=/usr/local/opt/php@7.1/bin:$PATH

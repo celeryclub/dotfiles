@@ -58,7 +58,13 @@ ZSH_CUSTOM=$HOME/.zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nvm composer klam behance)
+plugins=(
+  git
+  nvm
+  composer
+  klam
+  behance
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -90,5 +96,3 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-unsetopt share_history
