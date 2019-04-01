@@ -3,7 +3,7 @@
 
 # Except dotfiles
 !.*
-!.*/***
+!.*/**
 
 # macOS
 .CFUserTextEncoding
@@ -11,34 +11,43 @@
 .Trash
 .Xauthority
 
+# Secret
+.ssh
+
 # No tracking needed
-*.png
 .*_hist
 .*_history
 .anyconnect
 .aws
 .babel.json
+.bundle
 .composer
 .config
 .cups
 .docker
 .dropbox
 .flotilla
+.gem
 .local
 .netrc
 .node-gyp
-.npm
-.npmrc
+.npm*
 .nvm
 .pdepend
 .phpls
+.pyenv
+.rbenv
 .tblive*
 .v8flags*
 .viminfo
 .vscode*
 .vuerc
+.wget-hsts
+.zoomus
+*.png
 
 # ZSH
+.zcompcache
 .zcompdump-*
 .zsh-custom/secrets.zsh
 .zsh-update
