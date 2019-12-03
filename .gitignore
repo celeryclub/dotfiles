@@ -49,5 +49,6 @@
 # ZSH
 .zcompcache
 .zcompdump-*
-.zsh-custom/secrets.zsh
+.zhistory
+.zsh-custom/plugins/secrets/secrets.plugin.zsh
 .zsh-update
