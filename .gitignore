@@ -17,6 +17,7 @@
 # No tracking needed
 .*_hist
 .*_history
+.adobe
 .anyconnect
 .aws
 .babel.json
@@ -26,17 +27,21 @@
 .cups
 .docker
 .dropbox
+.expo
 .flotilla
+.fnm
 .gem
+.kube
 .local
+.minikube
 .netrc
 .node-gyp
 .npm*
-.nvm
 .pdepend
 .phpls
 .pyenv
 .rbenv
+.subversion
 .tblive*
 .v8flags*
 .viminfo

@@ -71,7 +71,7 @@ ZSH_CUSTOM="$HOME/.zsh-custom"
 plugins=(
   git
   composer
-  nvm
+  fnm
   aliases
   secrets
   klam
